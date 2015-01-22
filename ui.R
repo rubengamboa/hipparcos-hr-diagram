@@ -1,14 +1,14 @@
 library(shiny)
 shinyUI(pageWithSidebar(
-  headerPanel("Hipparcos Hertzsprung–Russell Diagram"),
+  headerPanel("Hipparcos Hertzsprung-Russell Diagram"),
   sidebarPanel(
     h2('Controls'),
 	sliderInput('slope', 'Estimated slope, in magnitude per color index',value = 1, min = -10, max = 10, step = 0.1),
 	sliderInput('intercept', 'Estimated intercept, in magnitude',value = 0, min = -10, max = 10, step = 0.1)
   ),
   mainPanel(
-      h2('About the Hertzsprung–Russell Diagram'),
-	  p(paste('The Hertzsprung–Russell (H-R) diagram shows a relationship between',
+      h2('About the Hertzsprung-Russell Diagram'),
+	  p(paste('The Hertzsprung-Russell (H-R) diagram shows a relationship between',
 	  		  'the mass of a star and its luminosity.',
 			  'Simply, the more massive a star is, the brighter it is.',
 			  'This relationship holds only for stars in the \'Main Sequence\',',
